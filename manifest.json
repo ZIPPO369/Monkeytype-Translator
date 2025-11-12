@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Monkeytype Translator",
+  "version": "1.0.0",
+  "description": "Překládací panel pro Monkeytype s popupem.",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Monkeytype Translator"
+  },
+  "permissions": ["activeTab", "scripting", "tabs"],
+  "host_permissions": [
+    "https://monkeytype.com/*",
+    "https://www.monkeytype.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://monkeytype.com/*",
+        "https://www.monkeytype.com/*"
+      ],
+      "js": ["waiter.js"],
+      "run_at": "document_start"
+    }
+  ]
+}

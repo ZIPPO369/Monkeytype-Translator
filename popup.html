@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="cs">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Monkeytype Translator</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="header">
+        <h1 id="titleText">Monkeytype Translator</h1>
+        <button id="openMtShortcut" class="shortcut" data-i18n="shortcut" title="Open MonkeyType">MonkeyType</button>
+      </div>
+      <div class="row">
+        <label for="sourceLang" data-i18n="source">Zdrojový jazyk</label>
+        <select id="sourceLang"></select>
+      </div>
+      <div class="row">
+        <label for="targetLang" data-i18n="target">Cílový jazyk</label>
+        <select id="targetLang"></select>
+      </div>
+      <div class="row">
+        <label for="appLangSel" data-i18n="appLang">Jazyk aplikace</label>
+        <select id="appLangSel">
+          <option value="en">English</option>
+          <option value="cs">Čeština</option>
+        </select>
+      </div>
+
+      <div class="row">
+        <label for="themeSel" data-i18n="theme">Vzhled</label>
+        <select id="themeSel">
+          <option value="light" data-i18n="themeLight">Světlý</option>
+          <option value="monkey-dark" data-i18n="themeDark">Tmavý (Monkeytype)</option>
+        </select>
+      </div>
+
+      <div class="actions">
+        <button id="resetUiBtn" data-i18n="reset">Reset UI na výchozí</button>
+        <button id="openDictBtn" data-i18n="dict">Otevřít slovník</button>
+      </div>
+
+      <p class="note" id="noteText">Překlad probíhá pouze přes Google Translate.</p>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

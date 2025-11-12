@@ -1,0 +1,68 @@
+:root {
+  color-scheme: light dark;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  min-width: 320px;
+  background: #0f172a;
+  color: #e2e8f0;
+}
+.wrap { padding: 14px 16px; }
+.header { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+h1 { font-size: 16px; margin: 0; }
+.shortcut {
+  border: 1px solid rgba(255,255,255,0.2);
+  background: rgba(255,255,255,0.08);
+  color: #fff;
+  border-radius: 8px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+.row { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; align-items: center; margin-top: 10px; }
+label { font-size: 13px; opacity: 0.9; }
+select {
+  padding: 8px 10px;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.2);
+  color: #fff;
+  border-radius: 8px;
+}
+.actions { display: flex; gap: 8px; margin-top: 12px; }
+.actions button {
+  padding: 8px 10px;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.2);
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.note { font-size: 12px; opacity: 0.7; margin-top: 10px; }
+
+/* Světlý téma */
+.theme-light body,
+body.theme-light {
+  background: #f8fafc;
+  color: #0f172a;
+}
+body.theme-light select,
+body.theme-light .shortcut,
+body.theme-light .actions button {
+  background: #ffffff;
+  color: #0f172a;
+  border-color: #cbd5e1;
+}
+
+/* Monkeytype tmavý */
+body.theme-monkey-dark {
+  background: #1a1a2e;
+  color: #e2e8f0;
+}
+body.theme-monkey-dark select,
+body.theme-monkey-dark .shortcut,
+body.theme-monkey-dark .actions button {
+  background: rgba(255,255,255,0.08);
+  color: #fff;
+  border-color: rgba(255,255,255,0.2);
+}
