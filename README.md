@@ -112,5 +112,4 @@ Suggestions and PRs are welcome:
 
 ## Author
 
-- GitHub: https://github.com/YOUR_USERNAME
-  (Replace `YOUR_USERNAME` with your account; you can add your website/LinkedIn if needed.)
+- GitHub: https://github.com/ZIPPO369
