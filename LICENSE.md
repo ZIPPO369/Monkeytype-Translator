@@ -35,6 +35,6 @@ Full Terms:
 8. Contact for Permission
    To request permission for use beyond personal evaluation, contact:
    Discord: zippozzzz
-   GitHub: https://github.com/YOUR_USERNAME
+   GitHub: https://github.com/ZIPPO369
 
 If you do not agree to these terms, you are not permitted to use this code.
